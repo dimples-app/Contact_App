@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 function AddContact() {
   return (
     <div>
@@ -31,6 +32,10 @@ function AddContact() {
             name="Phone"
             placeholder="Phone"
           />
+        </div>
+
+        <div>
+          <button className='ui button'> Add </button>
         </div>
      </form>
 
