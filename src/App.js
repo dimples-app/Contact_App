@@ -8,7 +8,7 @@ import AddContact from './components/AddContact'
 function App() {
   return (
     <div className="App">
-        Hello there
+       <Header />
     </div>
   );
 }
