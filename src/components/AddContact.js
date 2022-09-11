@@ -16,10 +16,20 @@ function AddContact() {
         </div>
 
         <div>
+        <label>Email</label>
         <input 
             type="text"
-            name="name"
-            placeholder="name"
+            name="Email"
+            placeholder="Email"
+          />
+        </div>
+
+        <div>
+        <label>Phone</label>
+        <input 
+            type="text"
+            name="Phone"
+            placeholder="Phone"
           />
         </div>
      </form>
