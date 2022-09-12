@@ -17,10 +17,15 @@ function AddContact() {
   const handlePhoneChange = (event) => {
     setPhone(event.target.value)
   }
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log('Submitted', name, email, phone)
+  }
   return (
     <div>
 
-      <form className='ui-form'>
+      <form className='ui-form' onSubmit={handleSubmit}>
         <h1>AddContact</h1>
         <div className='field'>
           <label>Name</label>
@@ -54,7 +59,7 @@ function AddContact() {
         </div>
 
         <div>
-          <button className='ui button'> Add </button>
+          <button type='submit' className='ui button'> Add </button>
         </div>
      </form>
 
