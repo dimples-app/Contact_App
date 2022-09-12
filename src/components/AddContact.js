@@ -1,7 +1,22 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 
 function AddContact() {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+
+  const handleNameChange = ( event) => {
+    setName(event.target.value);
+  }
+
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value);
+  }
+ 
+  const handlePhoneChange = (event) => {
+    setPhone(event.target.value)
+  }
   return (
     <div>
 
@@ -13,6 +28,8 @@ function AddContact() {
             type="text"
             name="name"
             placeholder="name"
+            onChange={handleNameChange}
+            value={name}
           />
         </div>
 
@@ -22,6 +39,8 @@ function AddContact() {
             type="text"
             name="Email"
             placeholder="Email"
+            onChange={handleEmailChange}
+            value={email}
           />
         </div>
 

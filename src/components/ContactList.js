@@ -1,6 +1,7 @@
 import React from 'react'
 
-function ContactList() {
+function ContactList(props) {
+  
   return (
     <div>ContactList</div>
   )
